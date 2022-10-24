@@ -20,13 +20,20 @@ function control(){
             'federicosimone@gmail.com', 
             'martinacarrera@gmail.com'
         ];
-   for (let i = 0; i < email.length; i++) {
-    if (valueEmail == email[i]){
-        console.log('Email non presente');
-    }else {
-        console.log('Email presente');
+
+   let emailpresente = false;
+    for ( i = 0; i < email.length; i++){
+        if (valueEmail == email[i]){
+            emailpresente = true;
+        }
     }
-   }
+
+    if (emailpresente == true){
+        document.getElementById('result').innerHTML = `Hai effettuato l'accesso!`
+    } else{
+        document.getElementById('result').innerHTML = `Ti sei registrato!`
+    }
+   
 }
 
 
