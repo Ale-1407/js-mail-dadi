@@ -9,21 +9,23 @@ stampa un messaggio appropriato sull’esito del controllo.
 
 */
 
-function control(){
-
-   let inputEmail = document.getElementById('inputEmail');
-
-   let valueEmail = inputEmail.value;
-
-   let email = [
+let inputEmail = document.getElementById('inputEmail');
+let email = [
             'alessiacarrera@gmail.com', 
             'federicosimone@gmail.com', 
             'martinacarrera@gmail.com'
         ];
+let emailpresente = false;
 
-   let emailpresente = false;
+function control(){
+
+   let valueEmail = inputEmail.value;
+
     for ( i = 0; i < email.length; i++){
-        if (valueEmail == email[i]){
+
+        let thisEmail = email[i];
+
+        if (valueEmail == thisEmail){
             emailpresente = true;
         }
     }
@@ -46,4 +48,14 @@ Stabilire il vincitore, in base a chi fa il punteggio più alto.
 
  */
 
+let inputUser = document.getElementById('inputUser');
+let inputComputer = document.getElementById('inputComputer');
   
+function genera(){
+
+    
+
+
+
+
+  }
