@@ -23,17 +23,13 @@
 
 <!-- PER COMODITA' INSERISCO COMUNQUE IL TAG FORM, nonostante dia problemi -->
 
-    <section class="gioco-dadi mt-4">
-        <h1 class="text-center pt-4">Chi vince?</h1>
-        <form class="m-5">
-            <div class="mb-3 text-center">
-                <label for="" class="form-label fw-semibold me-4">User number</label>
-                <input type="number" class="form-control2" id="inputUser" required>
-                <label for="" class="form-label fw-semibold me-4 ms-4">Computer number</label>
-                <input type="number" class="form-control2" id="inputComputer" required>
-                <button type="button" id="button" class="btn btn-outline-primary fw-semibold ms-4" onclick="genera();">Genera</button>
-            </div>
-        </form>
+    <section class="gioco-dadi mt-4 text-center">
+        <h1 class="pt-4">Chi vince?</h1>
+        <span id="numUser"></span>
+        <span id="numComp"></span>
+
+        <h2 id="risultato"></h2>
+        <button type="button" id="button" class="btn btn-outline-primary ms-4" onclick="gioca();">Gioca</button>
     </section>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
