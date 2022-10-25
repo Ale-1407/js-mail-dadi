@@ -1,0 +1,11 @@
+.form-control{
+    width: 40%;
+    display: inline-block;
+}
+
+.mail{
+    background-color: darkseagreen;
+    width: 60%;
+    margin: auto;
+    height: 200px;
+}
