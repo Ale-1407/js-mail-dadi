@@ -14,14 +14,24 @@
       <form class="m-5 text-center">
          <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label fw-semibold me-4">Email address</label>
-            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" required value="">
-            <button type="button" id="button" class="btn btn-outline-success ms-4" onclick="control();return false">Controlla Mail</button>
+            <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" required>
+            <button type="button" id="button" class="btn btn-outline-success ms-4" onclick="control();">Controlla Mail</button>
          </div>
          <div id="result"></div>
       </form>
     </section>
-    <section>
-        
+
+    <section class="gioco-dadi mt-4">
+        <h1 class="text-center pt-4">Chi vince?</h1>
+        <form class="m-5">
+            <div class="mb-3 text-center">
+                <label for="" class="form-label fw-semibold me-4">User number</label>
+                <input type="number" class="form-control2" id="inputUser" required>
+                <label for="" class="form-label fw-semibold me-4 ms-4">Computer number</label>
+                <input type="number" class="form-control2" id="inputComputer" required>
+                <button type="button" id="button" class="btn btn-outline-primary fw-semibold ms-4" onclick="genera();">Genera</button>
+            </div>
+        </form>
     </section>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
